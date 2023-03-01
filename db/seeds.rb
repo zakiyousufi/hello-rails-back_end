@@ -1,0 +1,5 @@
+Greeting.create(message: "Are you okay?")
+Greeting.create(message: "Why are you here?")
+Greeting.create(message: "Hello")
+Greeting.create(message: "Whats up?")
+Greeting.create(message: "Hi")
