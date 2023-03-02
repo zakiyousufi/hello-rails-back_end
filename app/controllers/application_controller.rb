@@ -1,9 +1,8 @@
-class ApplicationController < ActionController::API
-  before_action :set_default_format
+class ApplicationController < ActionController::Base
+  before_action :set_cors
 
-  private
-
-  def set_default_format
-    request.format = :json
+  def set_cors
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Allow-Methods'] = '*'
   end
 end
